@@ -2775,11 +2775,16 @@ def _schemas():
     # So this takes some liberties given the real layout of what we ship
     # (only 2 levels of nesting, no directories within the second level).
 
-    for version in files(__package__).joinpath("schemas").iterdir():
-        if version.name.startswith("."):
-            continue
-        for contents in c:
-            yield Resource.from_contents(contents)
+    resources = []
+    for contents in c:
+        resources.append(Resource.from_contents(contents))
+    return resources
+
+    # for version in files(__package__).joinpath("schemas").iterdir():
+    #     if version.name.startswith("."):
+    #         continue
+    #     for contents in c:
+    #         yield Resource.from_contents(contents)
 
         # for child in version.iterdir():
         #     children = [child] if child.is_file() else child.iterdir()
