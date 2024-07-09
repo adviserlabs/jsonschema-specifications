@@ -2776,7 +2776,7 @@ def _schemas():
 
     resources = []
     for contents in c:
-        resources.append(Resource.from_contents(contents))
+        resources.append(Resource.from_contents(json.loads(contents)))
     return resources
 
     # for version in files(__package__).joinpath("schemas").iterdir():
