@@ -1,6 +1,6 @@
-"""
+'''
 Load all the JSON Schema specification's official schemas.
-"""
+'''
 
 import json
 
@@ -13,7 +13,7 @@ except ImportError:
 
 from referencing import Resource
 
-c1="""{
+c1='''{
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "http://json-schema.org/draft-06/schema#",
     "title": "Core schema meta-schema",
@@ -166,9 +166,9 @@ c1="""{
     },
     "default": {}
 }
-"""
+'''
 
-c2="""
+c2='''
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://json-schema.org/draft-07/schema#",
@@ -335,9 +335,9 @@ c2="""
     },
     "default": true
 }
-"""
+'''
 
-c3="""
+c3='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/core",
@@ -395,9 +395,9 @@ c3="""
         }
     }
 }
-"""
+'''
 
-c4="""
+c4='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/content",
@@ -415,9 +415,9 @@ c4="""
         "contentSchema": { "$recursiveRef": "#" }
     }
 }
-"""
+'''
 
-c5="""
+c5='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/meta-data",
@@ -455,9 +455,9 @@ c5="""
         }
     }
 }
-"""
+'''
 
-c6="""
+c6='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/applicator",
@@ -514,9 +514,9 @@ c6="""
         }
     }
 }
-"""
+'''
 
-c7="""
+c7='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/validation",
@@ -615,9 +615,9 @@ c7="""
         }
     }
 }
-"""
+'''
 
-c8="""
+c8='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/schema",
@@ -649,7 +649,7 @@ c8="""
             "default": {}
         },
         "dependencies": {
-            "$comment": "\"dependencies\" is no longer a keyword, but schema authors should avoid redefining it to facilitate a smooth transition to \"dependentSchemas\" and \"dependentRequired\"",
+            "$comment": "\\"dependencies\\" is no longer a keyword, but schema authors should avoid redefining it to facilitate a smooth transition to \\"dependentSchemas\\" and \\"dependentRequired\\"",
             "type": "object",
             "additionalProperties": {
                 "anyOf": [
@@ -660,9 +660,9 @@ c8="""
         }
     }
 }
-"""
+'''
 
-c9="""
+c9='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/core",
@@ -714,9 +714,9 @@ c9="""
         }
     }
 }
-"""
+'''
 
-c10="""
+c10='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/content",
@@ -734,9 +734,9 @@ c10="""
         "contentSchema": { "$dynamicRef": "#meta" }
     }
 }
-"""
+'''
 
-c11="""
+c11='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/unevaluated",
@@ -752,9 +752,9 @@ c11="""
         "unevaluatedProperties": { "$dynamicRef": "#meta" }
     }
 }
-"""
+'''
 
-c12="""
+c12='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/format-assertion",
@@ -769,9 +769,9 @@ c12="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c13="""
+c13='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/meta-data",
@@ -809,9 +809,9 @@ c13="""
         }
     }
 }
-"""
+'''
 
-c14="""
+c14='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/format",
@@ -826,9 +826,9 @@ c14="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c15="""
+c15='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/applicator",
@@ -877,9 +877,9 @@ c15="""
         }
     }
 }
-"""
+'''
 
-c16="""
+c16='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/format-annotation",
@@ -894,9 +894,9 @@ c16="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c17="""
+c17='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/validation",
@@ -995,9 +995,9 @@ c17="""
         }
     }
 }
-"""
+'''
 
-c18="""
+c18='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/schema",
@@ -1026,14 +1026,14 @@ c18="""
     "$comment": "This meta-schema also defines keywords that have appeared in previous drafts in order to prevent incompatible extensions as they remain in common use.",
     "properties": {
         "definitions": {
-            "$comment": "\"definitions\" has been replaced by \"$defs\".",
+            "$comment": "\\"definitions\\" has been replaced by \\"$defs\\".",
             "type": "object",
             "additionalProperties": { "$dynamicRef": "#meta" },
             "deprecated": true,
             "default": {}
         },
         "dependencies": {
-            "$comment": "\"dependencies\" has been split and replaced by \"dependentSchemas\" and \"dependentRequired\" in order to serve their differing semantics.",
+            "$comment": "\\"dependencies\\" has been split and replaced by \\"dependentSchemas\\" and \\"dependentRequired\\" in order to serve their differing semantics.",
             "type": "object",
             "additionalProperties": {
                 "anyOf": [
@@ -1045,20 +1045,20 @@ c18="""
             "default": {}
         },
         "$recursiveAnchor": {
-            "$comment": "\"$recursiveAnchor\" has been replaced by \"$dynamicAnchor\".",
+            "$comment": "\\"$recursiveAnchor\\" has been replaced by \\"$dynamicAnchor\\".",
             "$ref": "meta/core#/$defs/anchorString",
             "deprecated": true
         },
         "$recursiveRef": {
-            "$comment": "\"$recursiveRef\" has been replaced by \"$dynamicRef\".",
+            "$comment": "\\"$recursiveRef\\" has been replaced by \\"$dynamicRef\\".",
             "$ref": "meta/core#/$defs/uriReferenceString",
             "deprecated": true
         }
     }
 }
-"""
+'''
 
-c19="""
+c19='''
 {
     "id": "http://json-schema.org/draft-04/schema#",
     "$schema": "http://json-schema.org/draft-04/schema#",
@@ -1208,9 +1208,9 @@ c19="""
     },
     "default": {}
 }
-"""
+'''
 
-c20="""
+c20='''
 {
 	"$schema" : "http://json-schema.org/draft-03/schema#",
 	"id" : "http://json-schema.org/draft-03/schema#",
@@ -1383,9 +1383,9 @@ c20="""
 
 	"default" : {}
 }
-"""
+'''
 
-c21="""
+c21='''
 {
     "$schema": "http://json-schema.org/draft-06/schema#",
     "$id": "http://json-schema.org/draft-06/schema#",
@@ -1539,9 +1539,9 @@ c21="""
     },
     "default": {}
 }
-"""
+'''
 
-c22="""
+c22='''
 {
     "$schema": "http://json-schema.org/draft-07/schema#",
     "$id": "http://json-schema.org/draft-07/schema#",
@@ -1708,9 +1708,9 @@ c22="""
     },
     "default": true
 }
-"""
+'''
 
-c23="""
+c23='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/core",
@@ -1768,9 +1768,9 @@ c23="""
         }
     }
 }
-"""
+'''
 
-c24="""
+c24='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/content",
@@ -1788,9 +1788,9 @@ c24="""
         "contentSchema": { "$recursiveRef": "#" }
     }
 }
-"""
+'''
 
-c25="""
+c25='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/meta-data",
@@ -1828,9 +1828,9 @@ c25="""
         }
     }
 }
-"""
+'''
 
-c26="""
+c26='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/applicator",
@@ -1887,9 +1887,9 @@ c26="""
         }
     }
 }
-"""
+'''
 
-c27="""
+c27='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/validation",
@@ -1988,9 +1988,9 @@ c27="""
         }
     }
 }
-"""
+'''
 
-c28="""
+c28='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/schema",
@@ -2022,7 +2022,7 @@ c28="""
             "default": {}
         },
         "dependencies": {
-            "$comment": "\"dependencies\" is no longer a keyword, but schema authors should avoid redefining it to facilitate a smooth transition to \"dependentSchemas\" and \"dependentRequired\"",
+            "$comment": "\\"dependencies\\" is no longer a keyword, but schema authors should avoid redefining it to facilitate a smooth transition to \\"dependentSchemas\\" and \\"dependentRequired\\"",
             "type": "object",
             "additionalProperties": {
                 "anyOf": [
@@ -2033,9 +2033,9 @@ c28="""
         }
     }
 }
-"""
+'''
 
-c29="""
+c29='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/core",
@@ -2087,9 +2087,9 @@ c29="""
         }
     }
 }
-"""
+'''
 
-c30="""
+c30='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/content",
@@ -2107,9 +2107,9 @@ c30="""
         "contentSchema": { "$dynamicRef": "#meta" }
     }
 }
-"""
+'''
 
-c31="""
+c31='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/unevaluated",
@@ -2125,9 +2125,9 @@ c31="""
         "unevaluatedProperties": { "$dynamicRef": "#meta" }
     }
 }
-"""
+'''
 
-c32="""
+c32='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/format-assertion",
@@ -2142,9 +2142,9 @@ c32="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c33="""
+c33='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/meta-data",
@@ -2182,9 +2182,9 @@ c33="""
         }
     }
 }
-"""
+'''
 
-c34="""
+c34='''
 {
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "$id": "https://json-schema.org/draft/2019-09/meta/format",
@@ -2199,9 +2199,9 @@ c34="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c35="""
+c35='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/applicator",
@@ -2250,9 +2250,9 @@ c35="""
         }
     }
 }
-"""
+'''
 
-c36="""
+c36='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/format-annotation",
@@ -2267,9 +2267,9 @@ c36="""
         "format": { "type": "string" }
     }
 }
-"""
+'''
 
-c37="""
+c37='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/validation",
@@ -2368,9 +2368,9 @@ c37="""
         }
     }
 }
-"""
+'''
 
-c38="""
+c38='''
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/schema",
@@ -2399,14 +2399,14 @@ c38="""
     "$comment": "This meta-schema also defines keywords that have appeared in previous drafts in order to prevent incompatible extensions as they remain in common use.",
     "properties": {
         "definitions": {
-            "$comment": "\"definitions\" has been replaced by \"$defs\".",
+            "$comment": "\\"definitions\\" has been replaced by \\"$defs\\".",
             "type": "object",
             "additionalProperties": { "$dynamicRef": "#meta" },
             "deprecated": true,
             "default": {}
         },
         "dependencies": {
-            "$comment": "\"dependencies\" has been split and replaced by \"dependentSchemas\" and \"dependentRequired\" in order to serve their differing semantics.",
+            "$comment": "\\"dependencies\\" has been split and replaced by \\"dependentSchemas\\" and \\"dependentRequired\\" in order to serve their differing semantics.",
             "type": "object",
             "additionalProperties": {
                 "anyOf": [
@@ -2418,20 +2418,20 @@ c38="""
             "default": {}
         },
         "$recursiveAnchor": {
-            "$comment": "\"$recursiveAnchor\" has been replaced by \"$dynamicAnchor\".",
+            "$comment": "\\"$recursiveAnchor\\" has been replaced by \\"$dynamicAnchor\\".",
             "$ref": "meta/core#/$defs/anchorString",
             "deprecated": true
         },
         "$recursiveRef": {
-            "$comment": "\"$recursiveRef\" has been replaced by \"$dynamicRef\".",
+            "$comment": "\\"$recursiveRef\\" has been replaced by \\"$dynamicRef\\".",
             "$ref": "meta/core#/$defs/uriReferenceString",
             "deprecated": true
         }
     }
 }
-"""
+'''
 
-c39="""
+c39='''
 {
     "id": "http://json-schema.org/draft-04/schema#",
     "$schema": "http://json-schema.org/draft-04/schema#",
@@ -2581,9 +2581,9 @@ c39="""
     },
     "default": {}
 }
-"""
+'''
 
-c40="""
+c40='''
 {
 	"$schema" : "http://json-schema.org/draft-03/schema#",
 	"id" : "http://json-schema.org/draft-03/schema#",
@@ -2756,16 +2756,16 @@ c40="""
 
 	"default" : {}
 }
-"""
+'''
 
 c = [c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14, c15, c16, c17, c18,
      c19, c20, c21, c22, c23, c24, c25, c26, c27, c28, c29, c30, c31, c32, c33, c34,
      c35, c36, c37, c38, c39, c40]
 
 def _schemas():
-    """
+    '''
     All schemas we ship.
-    """
+    '''
     # importlib.resources.abc.Traversal doesn't have nice ways to do this that
     # I'm aware of...
     #
