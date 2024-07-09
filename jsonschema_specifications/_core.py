@@ -2776,7 +2776,7 @@ def _schemas():
 
     resources = []
     for contents in c:
-        print(contents)
+        #print(contents)
         resources.append(Resource.from_contents(json.loads(contents)))
     return resources
 
