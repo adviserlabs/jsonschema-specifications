@@ -773,7 +773,6 @@ c12="""
 """
 
 c13="""
-
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
     "$id": "https://json-schema.org/draft/2020-12/meta/meta-data",
@@ -998,12 +997,6 @@ c17="""
     }
 }
 """
-
-
-
-
-
-
 
 c18="""
 {
@@ -2781,10 +2774,6 @@ def _schemas():
     #
     # So this takes some liberties given the real layout of what we ship
     # (only 2 levels of nesting, no directories within the second level).
-
-    contents = json.loads(c1)
-
-    yield 
 
     for version in files(__package__).joinpath("schemas").iterdir():
         if version.name.startswith("."):
