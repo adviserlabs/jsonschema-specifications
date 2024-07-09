@@ -10,7 +10,8 @@ from jsonschema_specifications._core import _schemas
 #: meta-schemas and vocabularies.
 
 s = _schemas()
-foo = _EMPTY_REGISTRY.with_resources(s)
+schemas_with_ids = [(resource.id(), resource) for resource in s]
+foo = _EMPTY_REGISTRY.with_resources(schemas_with_ids)
 REGISTRY = foo.crawl()
 
 #REGISTRY = (_schemas() @ _EMPTY_REGISTRY).crawl()
